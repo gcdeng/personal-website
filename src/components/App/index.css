@@ -1,0 +1,182 @@
+.App .navbar {
+  margin-bottom: 0;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  box-shadow: none;
+  visibility: visible;
+  font-weight: 300; }
+
+.App .welcome {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw; }
+  .App .welcome .name {
+    font-size: 45px;
+    font-weight: 300; }
+  .App .welcome .title {
+    font-size: 18px;
+    font-weight: 100; }
+
+.App .work, .App .project, .App footer {
+  padding: 50px; }
+
+.App .about {
+  padding: 10px;
+  background-color: #ffffff; }
+  .App .about .about-figure {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .App .about .about-figure .my-photo {
+      height: auto;
+      max-width: 60%; }
+  .App .about .about-content {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300; }
+    .App .about .about-content .its-me {
+      font-weight: bold; }
+
+.App .work {
+  background-color: #fafafa; }
+  .App .work .timeline {
+    list-style: none;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 0;
+    font-weight: 300;
+    font-size: 20px; }
+    .App .work .timeline:before {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      content: ' ';
+      display: block;
+      width: 1px;
+      height: 100%;
+      z-index: 5;
+      background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
+      background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+      background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+      background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+      background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%); }
+    .App .work .timeline li {
+      padding: 1em 0; }
+      .App .work .timeline li:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+    .App .work .timeline .direction-r {
+      position: relative;
+      width: 50%;
+      float: right;
+      left: 35px; }
+      .App .work .timeline .direction-r .flag:before {
+        left: -56px; }
+      .App .work .timeline .direction-r .flag-wrapper, .App .work .timeline .direction-r .time-wrapper, .App .work .timeline .direction-r .desc {
+        margin: 1em 0 0 0.75em; }
+    .App .work .timeline .direction-l {
+      position: relative;
+      width: 50%;
+      float: left;
+      text-align: right;
+      right: 35px; }
+      .App .work .timeline .direction-l .flag-wrapper, .App .work .timeline .direction-l .time-wrapper, .App .work .timeline .direction-l .desc {
+        margin: 1em 0.75em 0 0; }
+    .App .work .timeline .flag-wrapper {
+      position: relative;
+      display: inline-block; }
+      .App .work .timeline .flag-wrapper .flag {
+        position: relative; }
+        .App .work .timeline .flag-wrapper .flag:before {
+          position: absolute;
+          top: 50%;
+          right: -56px;
+          content: ' ';
+          display: block;
+          width: 12px;
+          height: 12px;
+          margin-top: -7px;
+          background: #948f8f;
+          border-radius: 10px;
+          z-index: 10; }
+      .App .work .timeline .flag-wrapper .time {
+        padding: 6px 6px; }
+  @media screen and (max-width: 768px) {
+    .App .work .timeline {
+      width: 100%;
+      padding: 2em 0 1em 0; }
+      .App .work .timeline li {
+        padding: 2em 0; }
+      .App .work .timeline .direction-l,
+      .App .work .timeline .direction-r {
+        float: none;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        right: 0; }
+        .App .work .timeline .direction-l .flag-wrapper, .App .work .timeline .direction-l .time-wrapper, .App .work .timeline .direction-l .desc,
+        .App .work .timeline .direction-r .flag-wrapper,
+        .App .work .timeline .direction-r .time-wrapper,
+        .App .work .timeline .direction-r .desc {
+          margin: 0; }
+      .App .work .timeline .flag-wrapper .flag {
+        background: #fafafa;
+        z-index: 15;
+        padding-bottom: 5px; }
+        .App .work .timeline .flag-wrapper .flag:before {
+          position: absolute;
+          top: -15px;
+          left: 50%;
+          content: ' ';
+          display: block;
+          width: 12px;
+          height: 12px;
+          margin-left: -5px;
+          background: #948f8f;
+          z-index: 10; }
+      .App .work .timeline .time-wrapper {
+        float: none;
+        display: block;
+        position: relative;
+        z-index: 15;
+        background: #fafafa; }
+      .App .work .timeline .desc {
+        position: relative;
+        display: block;
+        background: #fafafa;
+        z-index: 15; } }
+
+.App .project {
+  background-color: #f2f2f2; }
+
+.App footer {
+  background-color: #333333;
+  color: #777;
+  font-size: 16px;
+  font-weight: 300; }
+  .App footer ul {
+    float: right; }
+  .App footer li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    cursor: pointer; }
+  .App footer .icon {
+    width: 22px; }
+  @media (max-width: 992px) {
+    .App footer .email, .App footer ul {
+      text-align: center;
+      margin-bottom: 20px; }
+    .App footer ul {
+      padding-left: 20px;
+      float: none; } }
