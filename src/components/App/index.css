@@ -83,7 +83,7 @@
       .App .work .timeline .direction-r .flag:before {
         left: -56px; }
       .App .work .timeline .direction-r .flag-wrapper, .App .work .timeline .direction-r .time-wrapper, .App .work .timeline .direction-r .desc {
-        margin: 1em 0 0 0.75em; }
+        margin: 0.75em 0 0 0.75em; }
     .App .work .timeline .direction-l {
       position: relative;
       width: 50%;
@@ -91,7 +91,7 @@
       text-align: right;
       right: 35px; }
       .App .work .timeline .direction-l .flag-wrapper, .App .work .timeline .direction-l .time-wrapper, .App .work .timeline .direction-l .desc {
-        margin: 1em 0.75em 0 0; }
+        margin: 0.75em 0.75em 0 0; }
     .App .work .timeline .flag-wrapper {
       position: relative;
       display: inline-block; }
@@ -109,8 +109,6 @@
           background: #948f8f;
           border-radius: 10px;
           z-index: 10; }
-      .App .work .timeline .flag-wrapper .time {
-        padding: 6px 6px; }
   @media screen and (max-width: 768px) {
     .App .work .timeline {
       width: 100%;
@@ -158,6 +156,34 @@
 
 .App .project {
   background-color: #f2f2f2; }
+  .App .project .project-list-l {
+    margin-top: 200px; }
+  .App .project .project-list {
+    list-style: none;
+    padding-left: 0; }
+    .App .project .project-list .project-item {
+      text-align: center;
+      margin-bottom: 12vw; }
+      .App .project .project-list .project-item .project-img-container {
+        background-color: #777;
+        height: 300px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 36px; }
+      .App .project .project-list .project-item .project-title {
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000;
+        font-weight: 300; }
+      .App .project .project-list .project-item .project-desc {
+        margin: 0 auto;
+        margin-top: 18px;
+        max-width: 75%;
+        color: #4E4F52;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 200; }
 
 .App footer {
   background-color: #333333;

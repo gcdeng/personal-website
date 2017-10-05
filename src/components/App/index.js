@@ -48,36 +48,68 @@ class App extends Component {
           </Grid>
         </section>
         <section className="work">
-          <ul className="timeline">
-            <li>
-              <div className="direction-r">
-          			<div className="flag-wrapper">
-          				<span className="flag">QNAP</span>
-          			</div>
-                <div className="time-wrapper">
-                  <span className="time">2017/12 - present</span>
-                </div>
-          			<div className="desc">Frontend Developer</div>
-          		</div>
-            </li>
-            <li>
-              <div className="direction-l">
-          			<div className="flag-wrapper">
-          				<span className="flag">National Chiao Tung University (NCTU)</span>
-          			</div>
-                <div className="time-wrapper">
-                  <span className="time">2015/09/14 - 2017/09/04</span>
-                </div>
-          			<div className="desc">Institute of Computer Science and Engineering</div>
-          		</div>
-            </li>
-          </ul>
-
+          <Grid>
+            <Row>
+              <ul className="timeline">
+                <li>
+                  <div className="direction-r">
+              			<div className="flag-wrapper">
+              				<span className="flag">QNAP</span>
+              			</div>
+                    <div className="time-wrapper">
+                      <span className="time">2017/12 - present</span>
+                    </div>
+              			<div className="desc">Frontend Developer</div>
+              		</div>
+                </li>
+                <li>
+                  <div className="direction-l">
+              			<div className="flag-wrapper">
+              				<span className="flag">National Chiao Tung University (NCTU)</span>
+              			</div>
+                    <div className="time-wrapper">
+                      <span className="time">2015/09/14 - 2017/09/04</span>
+                    </div>
+              			<div className="desc">Institute of Computer Science and Engineering</div>
+              		</div>
+                </li>
+              </ul>
+            </Row>
+          </Grid>
         </section>
         <section className="project">
-          <h1>Projects</h1>
-          <h1>Leetcode</h1>
-
+          <Grid>
+            <Row>
+              <Col md={6} lg={6}>
+                <ul className="project-list project-list-l">
+                  <li className="project-item">
+                    <a href="">
+                      <div className="project-img-container">
+                        <img className="project-img" alt="project item"></img>
+                      </div>
+                    </a>
+                    <a href="" className="project-title">Safedrink</a>
+                    <p className="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div className="project-tag"></div>
+                  </li>
+                </ul>
+              </Col>
+              <Col md={6} lg={6}>
+                <ul className="project-list project-list-r">
+                  <li className="project-item">
+                    <a href="">
+                      <div className="project-img-container">
+                        <img className="project-img" alt="project item"></img>
+                      </div>
+                    </a>
+                    <a href="" className="project-title">Title</a>
+                    <p className="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div className="project-tag"></div>
+                  </li>
+                </ul>
+              </Col>
+            </Row>
+          </Grid>
         </section>
         <footer>
           <Grid>
