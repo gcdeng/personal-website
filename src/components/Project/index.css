@@ -1,0 +1,31 @@
+.project {
+  padding: 50px;
+  background-color: #f2f2f2; }
+  .project .project-list-l {
+    margin-top: 200px; }
+  .project .project-list {
+    list-style: none;
+    padding-left: 0; }
+    .project .project-list .project-item {
+      text-align: center;
+      margin-bottom: 12vw; }
+      .project .project-list .project-item .project-img-container {
+        background-color: #777;
+        height: 300px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 36px; }
+      .project .project-list .project-item .project-title {
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000;
+        font-weight: 300; }
+      .project .project-list .project-item .project-desc {
+        margin: 0 auto;
+        margin-top: 18px;
+        max-width: 75%;
+        color: #4E4F52;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 200; }

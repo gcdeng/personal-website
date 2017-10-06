@@ -1,0 +1,16 @@
+.about {
+  padding: 10px;
+  background-color: #ffffff; }
+  .about .about-figure {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .about .about-figure .my-photo {
+      height: auto;
+      max-width: 60%; }
+  .about .about-content {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300; }
+    .about .about-content .its-me {
+      font-weight: bold; }
