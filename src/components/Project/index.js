@@ -1,39 +1,44 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
+import ProjectItem from './ProjectItem';
 import './index.css';
 
 class Project extends Component{
+  // constructor(){
+  //   super();
+  // }
+
   render() {
+    let projectListL = [
+      {title:'Title', tag:'#', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'#', imgSrc:'#'}
+    ];
+    let projectListR = [
+      {title:'Title2', tag:'#', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'#', imgSrc:'#'}
+    ];
     return (
       <section className="project">
         <Grid>
           <Row>
             <Col md={6} lg={6}>
               <ul className="project-list project-list-l">
-                <li className="project-item">
-                  <a href="">
-                    <div className="project-img-container">
-                      <img className="project-img" alt="project item"></img>
-                    </div>
-                  </a>
-                  <a href="" className="project-title">Safedrink</a>
-                  <p className="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <div className="project-tag"></div>
-                </li>
+                {
+                  projectListL.map((p, i)=>{
+                    return (
+                      <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} key={i}/>
+                    )
+                  })
+                }
               </ul>
             </Col>
             <Col md={6} lg={6}>
               <ul className="project-list project-list-r">
-                <li className="project-item">
-                  <a href="">
-                    <div className="project-img-container">
-                      <img className="project-img" alt="project item"></img>
-                    </div>
-                  </a>
-                  <a href="" className="project-title">Title</a>
-                  <p className="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <div className="project-tag"></div>
-                </li>
+                {
+                  projectListR.map((p, i)=>{
+                    return (
+                      <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} key={i}/>
+                    )
+                  })
+                }
               </ul>
             </Col>
           </Row>
