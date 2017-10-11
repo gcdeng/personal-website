@@ -11,8 +11,8 @@
     width: 50%;
     float: right;
     left: 35px; }
-    .timeline-item .direction-r .flag:before {
-      left: -56px; }
+    .timeline-item .direction-r .logo {
+      left: -77px; }
     .timeline-item .direction-r .flag-wrapper, .timeline-item .direction-r .time-wrapper, .timeline-item .direction-r .desc {
       margin: 0.75em 0 0 0.75em; }
   .timeline-item .direction-l {
@@ -26,23 +26,27 @@
   .timeline-item .flag-wrapper {
     position: relative;
     display: inline-block; }
+    .timeline-item .flag-wrapper .flag-link {
+      text-decoration: none;
+      font-weight: 400;
+      cursor: pointer;
+      color: #000; }
     .timeline-item .flag-wrapper .flag {
       position: relative; }
-      .timeline-item .flag-wrapper .flag:before {
+      .timeline-item .flag-wrapper .flag .logo {
+        border-radius: 50%;
         position: absolute;
         top: 50%;
-        right: -56px;
-        content: ' ';
+        right: -77px;
         display: block;
-        width: 12px;
-        height: 12px;
-        margin-top: -7px;
-        background: #948f8f;
-        border-radius: 10px;
+        width: 55px;
+        height: 55px;
+        margin-top: -5px;
+        background: #fafafa;
         z-index: 10; }
   @media screen and (max-width: 768px) {
     .timeline-item {
-      padding: 2em 0; }
+      padding: 3em 0; }
       .timeline-item .direction-l,
       .timeline-item .direction-r {
         float: none;
@@ -59,16 +63,16 @@
         background: #fafafa;
         z-index: 15;
         padding-bottom: 5px; }
-        .timeline-item .flag-wrapper .flag:before {
+        .timeline-item .flag-wrapper .flag .logo {
+          border-radius: 50%;
           position: absolute;
-          top: -15px;
+          top: -50px;
           left: 50%;
-          content: ' ';
           display: block;
-          width: 12px;
-          height: 12px;
-          margin-left: -5px;
-          background: #948f8f;
+          width: 40px;
+          height: 40px;
+          margin-left: -20px;
+          background: #fafafa;
           z-index: 10; }
       .timeline-item .time-wrapper {
         float: none;

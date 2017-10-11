@@ -4,4 +4,10 @@
   border: none;
   box-shadow: none;
   visibility: visible;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 16px; }
+  .navbar .navbar-brand {
+    font-size: 16px;
+    padding-top: 35px; }
+  .navbar .navbar-nav > li > a {
+    padding-top: 35px; }

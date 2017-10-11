@@ -1,20 +1,22 @@
 .about{
-  padding: 10px;
-  background-color: #ffffff;
-  // height: 50vh;
+  padding-bottom: 50px;
+  background-color: #000;
+  // position: relative;
   .about-figure{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .my-photo{
+      display: block;
+      margin: auto;
       height: auto;
-      max-width: 60%;
+      max-width: 25%;
     }
   }
   .about-content{
-    margin-top: 30px;
+    // position: relative;
+    padding-top: 50px;
     font-size: 20px;
     font-weight: 300;
+    text-align: center;
+    color: #fff;
     .its-me{
       font-weight: bold;
     }

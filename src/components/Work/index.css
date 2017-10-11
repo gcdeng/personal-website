@@ -1,12 +1,11 @@
 .work {
-  padding: 50px;
   background-color: #fafafa; }
   .work .timeline {
     list-style: none;
     position: relative;
     width: 80%;
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 5em 0;
     font-weight: 300;
     font-size: 20px; }
     .work .timeline:before {
@@ -27,4 +26,5 @@
   @media screen and (max-width: 768px) {
     .work .timeline {
       width: 100%;
-      padding: 2em 0 1em 0; } }
+      padding: 5em 0 3em 0;
+      font-size: 16px; } }

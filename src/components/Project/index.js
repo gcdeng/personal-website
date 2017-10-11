@@ -16,7 +16,7 @@ class Project extends Component{
       {title:'Title2', tag:'#', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'#', imgSrc:'#'}
     ];
     return (
-      <section className="project">
+      <section className="project" id="project">
         <Grid>
           <Row>
             <Col md={6} lg={6}>

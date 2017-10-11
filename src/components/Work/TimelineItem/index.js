@@ -10,7 +10,12 @@ class TimelineItem extends Component {
       <li className="timeline-item">
         <div className={direction}>
           <div className="flag-wrapper">
-            <span className="flag">{this.props.title}</span>
+            <a className="flag-link" href={this.props.link} target='_blank'>
+              <span className="flag">
+                <img className="logo" src={this.props.logo} alt='work logo'/>
+                {this.props.title}
+              </span>
+            </a>
           </div>
           <div className="time-wrapper">
             <span className="time">{this.props.time}</span>

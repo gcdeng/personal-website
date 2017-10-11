@@ -7,6 +7,13 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  position: relative;
+  z-index: -2;
+  .banner{
+    position: fixed;
+    text-align: center;
+    z-index: -1;
+  }
   .name {
     font-size: 55px;
     font-weight: 300;

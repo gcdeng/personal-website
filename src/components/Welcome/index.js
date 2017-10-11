@@ -5,8 +5,10 @@ class Welcome extends Component {
   render(){
     return(
       <section className="welcome">
-        <h1 className="name">Eric Deng</h1>
-        <p className="title">Frontend Developer</p>
+        <div className="banner">
+          <h1 className="name">Eric Deng</h1>
+          <p className="title">Frontend Developer</p>
+        </div>
       </section>
     );
   }
