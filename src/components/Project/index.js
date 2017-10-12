@@ -10,10 +10,15 @@ class Project extends Component{
 
   render() {
     let projectListL = [
-      {title:'Title', tag:'#', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'#', imgSrc:'#'}
+      {title:'Facebook Chatbot - TenkiBot', tag:'', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'#', imgSrc:'#'},
+      {title:'NCTU Big Data', tag:'', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'', imgSrc:'#'},
+      {title:'NCTU Artificial Intelligence', tag:'', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'', imgSrc:'#'}
     ];
     let projectListR = [
-      {title:'Title2', tag:'#', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'#', imgSrc:'#'}
+      {title:'SafeDrink', tag:'', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'https://bitbucket.org/smshen/safedrink/overview', imgSrc:'#'},
+      {title:'Thesis - AQRA', tag:'', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'', imgSrc:'#'},
+      {title:'NCTU Network Programming', tag:'', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'', imgSrc:'#'},
+      {title:'NCTU Software Defined Network', tag:'', desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', link:'', imgSrc:'#'}
     ];
     return (
       <section className="project" id="project">
@@ -22,9 +27,6 @@ class Project extends Component{
             <div className="project-container">
               <Col md={6} lg={6}>
                 <ul className="project-list project-list-l">
-                  <div className="project-header">
-                    <p>Projects</p>
-                  </div>
                   {
                     projectListL.map((p, i)=>{
                       return (
@@ -36,6 +38,9 @@ class Project extends Component{
               </Col>
               <Col md={6} lg={6}>
                 <ul className="project-list project-list-r">
+                  <div className="project-header">
+                    <p>Projects</p>
+                  </div>
                   {
                     projectListR.map((p, i)=>{
                       return (

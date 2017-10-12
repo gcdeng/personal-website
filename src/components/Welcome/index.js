@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import './index.css';
-import myPhoto from '../img/myPhoto.jpg';
 
 class Welcome extends Component {
   render(){
@@ -25,7 +24,7 @@ class Welcome extends Component {
                     offsetXMin={offsetXMin}
                   >
                     <Col md={4} className="name-container">
-                      <p className="name"> Hi, I'm Eric Deng</p>
+                      <p className="name"> Hi, I'm Eric Deng, </p>
                     </Col>
                   </Parallax>
 
@@ -37,7 +36,7 @@ class Welcome extends Component {
                     offsetXMin={-1*offsetXMin}
                   >
                     <Col md={4}>
-                      <p className="title">a Frontend Developer</p>
+                      <p className="title">a Frontend Developer.</p>
                     </Col>
                   </Parallax>
                 </Row>
