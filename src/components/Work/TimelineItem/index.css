@@ -1,5 +1,5 @@
 .timeline-item {
-  padding: 1em 0; }
+  padding: 2.5em 0; }
   .timeline-item:after {
     content: "";
     display: block;
@@ -12,9 +12,14 @@
     float: right;
     left: 35px; }
     .timeline-item .direction-r .logo {
-      left: -77px; }
+      left: -80px; }
     .timeline-item .direction-r .flag-wrapper, .timeline-item .direction-r .time-wrapper, .timeline-item .direction-r .desc {
       margin: 0.75em 0 0 0.75em; }
+    .timeline-item .direction-r .work-header {
+      margin-bottom: 30px;
+      margin-left: 0;
+      margin-top: 0;
+      left: -15px; }
   .timeline-item .direction-l {
     position: relative;
     width: 50%;
@@ -23,27 +28,37 @@
     right: 35px; }
     .timeline-item .direction-l .flag-wrapper, .timeline-item .direction-l .time-wrapper, .timeline-item .direction-l .desc {
       margin: 0.75em 0.75em 0 0; }
+    .timeline-item .direction-l .work-header {
+      margin-bottom: 50px;
+      margin-left: 0;
+      margin-top: 0;
+      right: -20px; }
   .timeline-item .flag-wrapper {
     position: relative;
     display: inline-block; }
     .timeline-item .flag-wrapper .flag-link {
       text-decoration: none;
-      font-weight: 400;
       cursor: pointer;
-      color: #000; }
+      font-weight: 400; }
     .timeline-item .flag-wrapper .flag {
-      position: relative; }
+      position: relative;
+      color: #000; }
       .timeline-item .flag-wrapper .flag .logo {
         border-radius: 50%;
         position: absolute;
         top: 50%;
-        right: -77px;
+        right: -80px;
         display: block;
-        width: 55px;
-        height: 55px;
-        margin-top: -5px;
+        width: 60px;
+        height: 60px;
+        margin-top: -10px;
         background: #fafafa;
         z-index: 10; }
+  .timeline-item .time, .timeline-item .desc {
+    font-size: 18px; }
+  .timeline-item .work-header {
+    font-size: 32px;
+    font-weight: 200; }
   @media screen and (max-width: 768px) {
     .timeline-item {
       padding: 3em 0; }

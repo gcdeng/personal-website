@@ -19,28 +19,33 @@ class Project extends Component{
       <section className="project" id="project">
         <Grid>
           <Row>
-            <Col md={6} lg={6}>
-              <ul className="project-list project-list-l">
-                {
-                  projectListL.map((p, i)=>{
-                    return (
-                      <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} key={i}/>
-                    )
-                  })
-                }
-              </ul>
-            </Col>
-            <Col md={6} lg={6}>
-              <ul className="project-list project-list-r">
-                {
-                  projectListR.map((p, i)=>{
-                    return (
-                      <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} key={i}/>
-                    )
-                  })
-                }
-              </ul>
-            </Col>
+            <div className="project-container">
+              <Col md={6} lg={6}>
+                <ul className="project-list project-list-l">
+                  <div className="project-header">
+                    <p>Projects</p>
+                  </div>
+                  {
+                    projectListL.map((p, i)=>{
+                      return (
+                        <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} key={i}/>
+                      )
+                    })
+                  }
+                </ul>
+              </Col>
+              <Col md={6} lg={6}>
+                <ul className="project-list project-list-r">
+                  {
+                    projectListR.map((p, i)=>{
+                      return (
+                        <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} key={i}/>
+                      )
+                    })
+                  }
+                </ul>
+              </Col>
+            </div>
           </Row>
         </Grid>
       </section>

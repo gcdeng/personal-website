@@ -1,11 +1,11 @@
 .work {
-  background-color: #fafafa; }
+  background-color: #fff; }
   .work .timeline {
     list-style: none;
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 5em 0;
+    padding: 2em 0 5em 0;
     font-weight: 300;
     font-size: 20px; }
     .work .timeline:before {
@@ -17,12 +17,7 @@
       width: 1px;
       height: 100%;
       z-index: 5;
-      background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
-      background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-      background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-      background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-      background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%); }
+      background: #e5e5e5; }
   @media screen and (max-width: 768px) {
     .work .timeline {
       width: 100%;

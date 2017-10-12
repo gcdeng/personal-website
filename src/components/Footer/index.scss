@@ -1,7 +1,7 @@
 footer{
   padding: 50px;
-  background-color: #333333;
-  color: #777;
+  background-color: #f2f2f2;
+  color: #333;
   font-size: 16px;
   font-weight: 300;
   ul{
@@ -15,6 +15,11 @@ footer{
   }
   .icon {
     width: 22px;
+  }
+  .leetcode{
+    position: relative;
+    height: 26px;
+    top: 2px;
   }
   @media (max-width: 992px){
     .email, ul{

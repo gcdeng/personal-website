@@ -8,6 +8,7 @@ import fbIcon from '../img/facebook.svg';
 import igIcon from '../img/instagram.svg';
 import githubIcon from '../img/github.svg';
 import bitbucketIcon from '../img/bitbucket.svg';
+import leetcodeIcon from '../img/leetcode-logo.png';
 
 class Footer extends Component {
 
@@ -27,6 +28,7 @@ class Footer extends Component {
                 <li><a href="https://www.instagram.com/frederick_deng/" target="_blank" rel="noopener noreferrer"><img className="icon" src={igIcon} alt="instagram"></img></a></li>
                 <li><a href="https://github.com/gcdeng" target="_blank" rel="noopener noreferrer"><img className="icon" src={githubIcon} alt="github"></img></a></li>
                 <li><a href="https://bitbucket.org/gcdeng/" target="_blank" rel="noopener noreferrer"><img className="icon" src={bitbucketIcon} alt="bitbucket"></img></a></li>
+                <li><a href="https://leetcode.com/gcdeng/" target="_blank" rel="noopener noreferrer"><img className="icon leetcode" src={leetcodeIcon} alt="leetcode"></img></a></li>
               </ul>
             </Col>
           </Row>

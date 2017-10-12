@@ -15,7 +15,7 @@ class Navigation extends Component {
           <Nav pullRight>
             <NavItem eventKey={1} href="#about">about</NavItem>
             <NavItem eventKey={2} href="#work">work</NavItem>
-            <NavItem eventKey={3} href="#project">project</NavItem>
+            <NavItem eventKey={3} href="#project">projects</NavItem>
             <NavItem eventKey={4} href="/blog">blog</NavItem>
           </Nav>
         </Navbar.Collapse>

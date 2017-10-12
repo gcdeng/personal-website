@@ -1,7 +1,9 @@
 .about{
   padding-bottom: 50px;
   background-color: #000;
-  // position: relative;
+  position: relative;
+  .about-container{
+  }
   .about-figure{
     .my-photo{
       display: block;
@@ -12,11 +14,14 @@
   }
   .about-content{
     // position: relative;
-    padding-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 120px;
     font-size: 20px;
     font-weight: 300;
     text-align: center;
     color: #fff;
+    line-height: 35px;
     .its-me{
       font-weight: bold;
     }
