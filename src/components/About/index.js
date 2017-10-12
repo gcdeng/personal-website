@@ -14,7 +14,7 @@ class About extends Component {
               <ParallaxProvider>
                 <Parallax
                     className="custom-class"
-                    offsetYMax={30}
+                    offsetYMax={0}
                     offsetYMin={-30}
                     slowerScrollRate={false}
                     tag="figure"
@@ -27,9 +27,9 @@ class About extends Component {
               <ParallaxProvider>
                 <Parallax
                   className="custom-class"
-                  offsetYMax={20}
-                  offsetYMin={-20}
-                  slowerScrollRate={true}
+                  offsetYMax={-50}
+                  offsetYMin={30}
+                  slowerScrollRate={false}
                 >
                   <div className="about-content">
                     <p>Hi, I'm <span className="its-me">Eric Deng</span>, a Frontend Developer living in Taipei, Taiwan.

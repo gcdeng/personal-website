@@ -12,7 +12,7 @@
     float: right;
     left: 35px; }
     .timeline-item .direction-r .logo {
-      left: -80px; }
+      left: -85px; }
     .timeline-item .direction-r .flag-wrapper, .timeline-item .direction-r .time-wrapper, .timeline-item .direction-r .desc {
       margin: 0.75em 0 0 0.75em; }
     .timeline-item .direction-r .work-header {
@@ -47,10 +47,10 @@
         border-radius: 50%;
         position: absolute;
         top: 50%;
-        right: -80px;
+        right: -85px;
         display: block;
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         margin-top: -10px;
         background: #fafafa;
         z-index: 10; }

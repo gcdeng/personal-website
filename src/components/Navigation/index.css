@@ -11,7 +11,13 @@
     font-size: 16px;
     padding-top: 35px; }
   .navbar .navbar-nav > li > a {
-    padding-top: 35px; }
+    padding-top: 35px;
+    text-shadow: none; }
+    .navbar .navbar-nav > li > a:hover {
+      color: #777; }
+  .navbar .nav-link {
+    color: #777;
+    text-decoration: none; }
 
 .hide {
   opacity: 0 !important;

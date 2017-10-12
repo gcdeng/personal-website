@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import Scroll from 'react-scroll';
 import './index.css';
+
+let Link = Scroll.Link;
 
 class Navigation extends Component {
   constructor(props){
@@ -31,9 +34,21 @@ class Navigation extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={1} href="#about">about</NavItem>
-            <NavItem eventKey={2} href="#work">work</NavItem>
-            <NavItem eventKey={3} href="#project">projects</NavItem>
+            <NavItem>
+              <Link className="nav-link" to="about" spy={true} smooth="easeInCubic" offset={-100} duration={500}>
+                about
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="nav-link" to="work" spy={true} smooth="easeInCubic" duration={500}>
+                work
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="nav-link" to="project" spy={true} smooth="easeInCubic" duration={500}>
+                projects
+              </Link>
+            </NavItem>
             <NavItem eventKey={4} href="/blog">blog</NavItem>
           </Nav>
         </Navbar.Collapse>

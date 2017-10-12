@@ -2,7 +2,7 @@
   background-color: #fafafa;
   position: relative; }
   .project .project-container {
-    padding-top: 8em;
+    padding-top: 4.5em;
     width: 100%;
     margin: 0 auto; }
     .project .project-container:before {
@@ -11,7 +11,7 @@
       left: 50%;
       top: 0;
       width: 1px;
-      height: 8%;
+      height: 6%;
       background: #e5e5e5; }
   .project .project-list-l {
     margin-top: 300px; }
