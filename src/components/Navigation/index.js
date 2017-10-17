@@ -14,13 +14,19 @@ class Navigation extends Component {
     };
   }
 
-  componentDidMount(prevState){
-    document.addEventListener('scroll', () => {
-      this.setState({
-        scrollY: window.scrollY,
-        hidden: window.scrollY > this.state.scrollY
-      })
-    });
+  componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () =>{
+    this.setState({
+      scrollY: window.scrollY,
+      hidden: window.scrollY > this.state.scrollY
+    })
   }
 
   render(){
@@ -35,7 +41,7 @@ class Navigation extends Component {
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem>
-              <Link className="nav-link" to="about" spy={true} smooth="easeInCubic" offset={-100} duration={500}>
+              <Link className="nav-link" to="about" spy={true} smooth="easeInCubic" offset={0} duration={500}>
                 about
               </Link>
             </NavItem>

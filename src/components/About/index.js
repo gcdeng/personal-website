@@ -9,14 +9,14 @@ class About extends Component {
     return(
       <section className="about" id="about">
         <Grid>
-          <Row>
-            <div className="about-container">
+          <Row className="about-container">
+            <Col md={6}>
               <ParallaxProvider>
                 <Parallax
                     className="custom-class"
                     offsetYMax={0}
-                    offsetYMin={-30}
-                    slowerScrollRate={false}
+                    offsetYMin={0}
+                    slowerScrollRate={true}
                     tag="figure"
                 >
                   <figure className="about-figure">
@@ -24,20 +24,24 @@ class About extends Component {
                   </figure>
                 </Parallax>
               </ParallaxProvider>
+            </Col>
+            <Col md={6}>
               <ParallaxProvider>
                 <Parallax
                   className="custom-class"
-                  offsetYMax={-50}
-                  offsetYMin={30}
+                  offsetYMax={0}
+                  offsetYMin={0}
                   slowerScrollRate={false}
                 >
                   <div className="about-content">
-                    <p>Hi, I'm <span className="its-me">Eric Deng</span>, a Frontend Developer living in Taipei, Taiwan.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Hello! My name is <span className="its-me">Guo Qin Deng</span>, or you can call me <span className="its-me">Eric</span>. I am a self-taught web developer from Taipei, Taiwan.</p>
+                    <p>I am experienced in both Frontend development (HTML5, CSS3, SASS, Javascript, jQuery, React, Bootstrap) and Backend development (Node, Python). I’m currently focusing on frontend development and building Javascript applications.</p>
+                    <p>I am both driven and self-motivated, and I'm constantly experimenting with new techniques. I am passionate about web development, and strive to better myself as a developer.</p>
+                    <p>In my free time, I like to study, workout, listen to music, play guitar, taste cuisines and coffee.</p>
                   </div>
                 </Parallax>
               </ParallaxProvider>
-            </div>
+            </Col>
           </Row>
         </Grid>
       </section>

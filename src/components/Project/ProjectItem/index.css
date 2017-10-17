@@ -1,5 +1,5 @@
 .project-item {
-  text-align: center;
+  text-align: left;
   margin-bottom: 12vw; }
   .project-item .project-img-container {
     background-color: #f2f2f2;
@@ -9,21 +9,24 @@
     margin-bottom: 36px;
     text-align: center;
     vertical-align: middle; }
+  .project-item .project-content-container {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left; }
   .project-item .project-title {
     text-decoration: none;
     font-size: 20px;
     line-height: 25px;
     color: #000;
     font-weight: 300; }
-  .project-item .project-desc {
-    margin: 0 auto;
-    margin-top: 18px;
-    max-width: 75%;
+  .project-item .project-desc, .project-item .projectItem-list {
     color: #4E4F52;
     line-height: 25px;
     font-size: 18px;
     font-weight: 200; }
   .project-item .project-tag {
-    margin-top: 18px;
     font-size: 16px;
     color: #909398; }
+  .project-item .project-desc, .project-item .project-tag {
+    margin-top: 18px; }

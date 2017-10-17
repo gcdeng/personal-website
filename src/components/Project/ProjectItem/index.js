@@ -14,9 +14,21 @@ class ProjectItem extends Component {
             <img className="project-img" src={this.props.imgSrc} alt={this.props.title}></img>
           </div>
         </a>
-        <a href={this.props.link} className="project-title" target='_blank'>{this.props.title}</a>
-        <p className="project-desc">{this.props.desc}</p>
-        <div className="project-tag">{this.props.tag}</div>
+        <div className="project-content-container">
+          <a href={this.props.link} className="project-title" target='_blank'>{this.props.title}</a>
+          <p className="project-desc">{this.props.desc}</p>
+          {this.props.list!==undefined?
+            <ol className="projectItem-list">
+              {
+                this.props.list.map((l, i)=>{
+                  return <li key={i}>{l}</li>
+                })
+              }
+            </ol>
+            : ''
+          }
+          <div className="project-tag">{this.props.tag}</div>
+        </div>
       </li>
     );
   }
