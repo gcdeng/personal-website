@@ -9,7 +9,9 @@
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
   .navbar .navbar-brand {
     font-size: 16px;
-    padding-top: 35px; }
+    padding-top: 35px;
+    font-weight: 300;
+    text-shadow: none; }
   .navbar .navbar-nav > li > a {
     padding-top: 35px;
     text-shadow: none; }

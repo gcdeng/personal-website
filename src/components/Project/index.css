@@ -1,20 +1,28 @@
 .project {
-  background-color: #fafafa;
+  background-color: #fff;
   position: relative; }
   .project .project-container {
-    padding-top: 4.5em;
-    width: 100%;
-    margin: 0 auto; }
-    .project .project-container:before {
-      position: absolute;
+    padding-top: 4.5em; }
+  .project .img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url("../img/work-bg.jpg");
+    background-position: 43% center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .project .img-container:before {
       content: '';
-      left: 50%;
+      position: absolute;
       top: 0;
-      width: 1px;
-      height: 6%;
-      background: #e5e5e5; }
-  .project .project-list-l {
-    margin-top: 300px; }
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)); }
+  .project .img-container-l {
+    left: 0; }
   .project .project-list {
     list-style: none;
     padding-left: 0; }

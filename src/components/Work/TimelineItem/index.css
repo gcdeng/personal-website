@@ -1,5 +1,5 @@
 .timeline-item {
-  padding: 2.2em 0; }
+  padding: 2.5em 0; }
   .timeline-item:after {
     content: "";
     display: block;
@@ -39,23 +39,25 @@
     .timeline-item .flag-wrapper .flag-link {
       text-decoration: none;
       cursor: pointer;
-      font-weight: 400; }
+      font-weight: 300; }
     .timeline-item .flag-wrapper .flag {
       position: relative;
       color: #000; }
       .timeline-item .flag-wrapper .flag .logo {
-        border-radius: 50%;
         position: absolute;
         top: 50%;
         right: -85px;
         display: block;
-        width: 70px;
-        height: 70px;
-        margin-top: -10px;
-        background: #fafafa;
         z-index: 10; }
+        .timeline-item .flag-wrapper .flag .logo .logo-img {
+          border-radius: 50%;
+          width: 70px;
+          height: 70px;
+          background: #fafafa; }
   .timeline-item .time, .timeline-item .desc {
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: 200;
+    color: #4E4F52; }
   .timeline-item .work-header {
     font-size: 32px;
     font-weight: 200; }

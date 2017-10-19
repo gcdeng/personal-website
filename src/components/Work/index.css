@@ -1,5 +1,6 @@
 .work {
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative; }
   .work .timeline {
     list-style: none;
     position: relative;
@@ -18,6 +19,26 @@
       height: 100%;
       z-index: 5;
       background: #e5e5e5; }
+  .work .img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url("../img/project-bg-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .work .img-container:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); }
+  .work .img-container-r {
+    right: 0; }
   @media screen and (max-width: 768px) {
     .work .timeline {
       width: 100%;

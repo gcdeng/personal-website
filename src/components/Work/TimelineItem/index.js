@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import './index.css';
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
 class TimelineItem extends Component {
   render(){
-    let direction='';
-    this.props.order%2===0 ?  direction='direction-r' : direction='direction-l';
-
     return(
       <li className="timeline-item">
-        <div className={direction}>
+        <div className="direction-l">
           {
             this.props.time==='' ?
               <div className="flag-wrapper work-header">
@@ -21,7 +19,17 @@ class TimelineItem extends Component {
                 <div className="flag-wrapper">
                   <a className="flag-link" href={this.props.link} target='_blank'>
                     <span className="flag">
-                      <img className="logo" src={this.props.logo} alt='work logo'/>
+                      <ParallaxProvider>
+                        <Parallax
+                          className="logo"
+                          offsetYMax={30}
+                          offsetYMin={-30}
+                          slowerScrollRate={true}
+                          tag="figure"
+                        >
+                          <img className="logo-img" src={this.props.logo} alt='work logo'/>
+                        </Parallax>
+                      </ParallaxProvider>
                       {this.props.title}
                     </span>
                   </a>

@@ -41,7 +41,7 @@ class Navigation extends Component {
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem>
-              <Link className="nav-link" to="about" spy={true} smooth="easeInCubic" offset={0} duration={500}>
+              <Link className="nav-link" to="about" spy={true} smooth="easeInCubic" duration={500}>
                 about
               </Link>
             </NavItem>
@@ -55,7 +55,7 @@ class Navigation extends Component {
                 projects
               </Link>
             </NavItem>
-            <NavItem eventKey={4} href="/blog">blog</NavItem>
+            <NavItem className="nav-link" href="/blog">blog</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

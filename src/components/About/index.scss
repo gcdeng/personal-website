@@ -3,25 +3,24 @@
   padding-bottom: 100px;
   background-color: #000;
   position: relative;
+  z-index: 1;
   .about-container{
   }
   .about-figure{
-    position: absolute;
-    top: 50px;
+    // position: absolute;
+    // top: 50px;
     .my-photo{
       display: block;
-      margin: auto;
       height: auto;
-      max-width: 55%;
-      padding-top: 60px;
-      margin-right: 40px;
-
+      max-width: 60%;
+      padding-top: 30%;
+      margin: auto;
+      margin-right: 20px;
     }
   }
   .about-content{
-    width: 75%;
-    margin: 0 auto;
-    padding-right: 100px;
+    margin-right: 150px;
+    margin-left: 20px;
     font-size: 20px;
     font-weight: 200;
     text-align: left;

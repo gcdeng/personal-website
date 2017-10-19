@@ -1,23 +1,46 @@
 .project{
   // padding: 50px;
-  background-color: #fafafa;
+  background-color: #fff;
   position: relative;
   .project-container{
     padding-top: 4.5em;
-    width: 100%;
-    margin: 0 auto;
+    // width: 100%;
+    // margin: 0 auto;
+    // &:before{
+    //   position: absolute;
+    //   content: '';
+    //   left: 50%;
+    //   top: 0;
+    //   width: 1px;
+    //   height: 6%;
+    //   background: rgb(229,229,229);
+    // }
+  }
+  .img-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url("../img/work-bg.jpg");
+    background-position: 43% center;
+    background-repeat: no-repeat;
+    background-size: cover;
     &:before{
-      position: absolute;
       content: '';
-      left: 50%;
+      position: absolute;
       top: 0;
-      width: 1px;
-      height: 6%;
-      background: rgb(229,229,229);
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
     }
   }
+  .img-container-l{
+    left: 0;
+  }
   .project-list-l {
-    margin-top: 300px;
+    // margin-top: 300px;
   }
   .project-list{
     list-style: none;

@@ -1,22 +1,60 @@
 import React, {Component} from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+// import { Grid, Row, Col } from 'react-bootstrap';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import './index.css';
 
 class Welcome extends Component {
+  constructor(){
+    super();
+    this.state = {
+      changeGradient: 'radial-gradient(circle, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.2))',
+      bgSize: '120%'
+    }
+  }
+
+  componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = (e) => {
+    let proportion = (window.scrollY/window.innerHeight);
+    let gradientOffset = 0.2, bgSizeOffset=1.2;
+    let gradientPropo = proportion+gradientOffset;
+    if(proportion<=1){
+      this.setState({
+        changeGradient: `radial-gradient(circle, rgba(0, 0, 0, ${gradientPropo}), rgba(0, 0, 0, ${gradientPropo*1.2}), rgba(0, 0, 0, ${gradientPropo*1.4}))`
+      })
+    }
+    if(proportion<=0.8){
+      this.setState({
+        bgSize: `${(bgSizeOffset-(proportion*0.2))*100}%`
+      })
+    }
+  }
+
   render(){
+    let {
+      changeGradient,
+      bgSize
+    } = this.state;
     return(
-      <section className="welcome">
-        <ParallaxProvider>
-          <Parallax
-            className="custom-class"
-            offsetYMax={800}
-            offsetYMin={-800}
-            slowerScrollRate={true}
-          >
-            <p className="title">Hi, I'm Eric, a Frontend Web Developer.</p>
-          </Parallax>
-        </ParallaxProvider>
+      <section className='welcome' style={{backgroundSize: bgSize}}>
+        <div className="gradient" style={{background: changeGradient}}>
+          <ParallaxProvider>
+            <Parallax
+              className="custom-class"
+              offsetYMax={800}
+              offsetYMin={-800}
+              slowerScrollRate={true}
+            >
+              <p className="title">Hi, I'm Eric, a Frontend Web Developer.</p>
+            </Parallax>
+          </ParallaxProvider>
+        </div>
       </section>
     );
   }
