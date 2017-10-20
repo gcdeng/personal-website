@@ -30,3 +30,7 @@
     color: #909398; }
   .project-item .project-desc, .project-item .project-tag {
     margin-top: 18px; }
+
+@media screen and (max-width: 992px) {
+  .project-item .project-content-container {
+    width: 100%; } }

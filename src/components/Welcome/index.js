@@ -8,7 +8,7 @@ class Welcome extends Component {
     super();
     this.state = {
       changeGradient: 'radial-gradient(circle, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.2))',
-      bgSize: '120%'
+      bgSize: '150%'
     }
   }
 
@@ -22,7 +22,7 @@ class Welcome extends Component {
 
   handleScroll = (e) => {
     let proportion = (window.scrollY/window.innerHeight);
-    let gradientOffset = 0.2, bgSizeOffset=1.2;
+    let gradientOffset = 0.2, bgSizeOffset=1.5;
     let gradientPropo = proportion+gradientOffset;
     if(proportion<=1){
       this.setState({

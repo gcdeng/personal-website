@@ -20,7 +20,7 @@
     z-index: 2; }
   .welcome .title {
     color: #ffffff;
-    font-size: 45px;
+    font-size: 2.25rem;
     font-weight: 400;
     text-shadow: -1px -1px 1px #fafafa, 2px 2px 1px #777;
     display: block;
@@ -31,4 +31,4 @@
   .welcome {
     background-size: cover !important; }
     .welcome .title {
-      font-size: 3rem; } }
+      font-size: 1.5rem; } }
