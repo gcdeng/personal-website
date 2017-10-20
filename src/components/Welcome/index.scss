@@ -20,7 +20,7 @@
     justify-content: center;
   }
   .parallax-inner{
-    z-index: 100;
+    z-index: 2;
   }
   .title {
     color: #ffffff;
@@ -31,6 +31,15 @@
       2px 2px 1px #777;
     display: block;
     position: relative;
-    z-index: 2;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .welcome{
+    background-size: cover !important;
+    .title{
+      font-size: 3rem;
+    }
   }
 }

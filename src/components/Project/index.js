@@ -11,7 +11,7 @@ class Project extends Component{
   render() {
     let projectList = [
       {title:'SafeDrink', tag:'React', desc:"In order to impprove drink safety, we rate for drink according to its ingredient, inspection report, packaging material, users also can comment on each drink. It is a cooperation project created by five people, I'm responsible for frontend development.", link:'https://bitbucket.org/smshen/safedrink/overview', imgSrc:'#'},
-      {title:'TenkiBot', tag:'Javascript', desc:"A facebook chatbot for search and regular notice the weather of cities, the data are sourced from CWB.", link:'#', imgSrc:'#'},
+      {title:'TenkiBot', tag:'Javascript', desc:"A facebook chatbot for search and regular notice the weather, the data are sourced from CWB.", link:'#', imgSrc:'#'},
       // {title:'Thesis - AQRA', tag:"Python/RYU/Mininet", desc:"We propose an application-aware QoS routing algorithm (AQRA) for SDN-based IoT networking to guarantee multiple QoS requirements of high-priority IoT applications and to adapt to the current network status for better routing paths.", link:'', imgSrc:'#'},
       {title:'Stock analysis based on borker datasets', tag:'Python/scikit-learn/spark', desc:"Analyze stock and broker datasets by data mining techniques to find out the investment strategy", link:'', imgSrc:'#'},
       {title:'Battle City Game with AI agent', tag:'Python', desc:"Design an agent as the player in Battle City Game to move tank and destroy the enemy tanks.", link:"", imgSrc:'#'},
@@ -31,7 +31,6 @@ class Project extends Component{
       <section className="project" id="project">
         <Grid>
           <Row className="project-container">
-            {/* <div className="project-container"> */}
               <div className="img-container img-container-l"></div>
               <Col md={6} lg={6}>
                 {/* <ul className="project-list project-list-l">

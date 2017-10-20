@@ -45,11 +45,16 @@
   .img-container-r{
     right: 0;
   }
+  .img-container-l{
+    left: 0;
+  }
+}
 
-  @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
+  .work{
     .timeline{
-      width: 100%;
-      padding: 5em 0 3em 0;
+      // width: 80%;
+      padding: 6em 0 3em 0;
       font-size: 16px;
     }
   }

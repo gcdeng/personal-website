@@ -4,7 +4,7 @@
   background-color: #000;
   position: relative;
   z-index: 1; }
-  .about .about-figure .my-photo {
+  .about .my-photo {
     display: block;
     height: auto;
     max-width: 60%;
@@ -23,3 +23,17 @@
       font-weight: 400; }
     .about .about-content p {
       margin: 20px 0 50px 0; }
+
+@media screen and (max-width: 992px) {
+  .about {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    z-index: 2; }
+    .about .my-photo {
+      max-width: 50%;
+      margin-right: auto;
+      padding-top: 50px; }
+    .about .about-content {
+      width: 75%;
+      margin: auto;
+      margin-top: 70px; } }

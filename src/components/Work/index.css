@@ -39,8 +39,10 @@
       background: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); }
   .work .img-container-r {
     right: 0; }
-  @media screen and (max-width: 768px) {
-    .work .timeline {
-      width: 100%;
-      padding: 5em 0 3em 0;
-      font-size: 16px; } }
+  .work .img-container-l {
+    left: 0; }
+
+@media screen and (max-width: 768px) {
+  .work .timeline {
+    padding: 6em 0 3em 0;
+    font-size: 16px; } }

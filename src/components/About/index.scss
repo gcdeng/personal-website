@@ -4,19 +4,13 @@
   background-color: #000;
   position: relative;
   z-index: 1;
-  .about-container{
-  }
-  .about-figure{
-    // position: absolute;
-    // top: 50px;
-    .my-photo{
-      display: block;
-      height: auto;
-      max-width: 60%;
-      padding-top: 30%;
-      margin: auto;
-      margin-right: 20px;
-    }
+  .my-photo{
+    display: block;
+    height: auto;
+    max-width: 60%;
+    padding-top: 30%;
+    margin: auto;
+    margin-right: 20px;
   }
   .about-content{
     margin-right: 150px;
@@ -31,6 +25,24 @@
     }
     p {
       margin: 20px 0 50px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    z-index: 2;
+    .my-photo{
+      max-width: 50%;
+      margin-right: auto;
+      padding-top: 50px;
+    }
+    .about-content{
+      width: 75%;
+      margin: auto;
+      margin-top: 70px;
     }
   }
 }

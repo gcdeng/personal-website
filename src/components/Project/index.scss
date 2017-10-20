@@ -4,17 +4,7 @@
   position: relative;
   .project-container{
     padding-top: 4.5em;
-    // width: 100%;
-    // margin: 0 auto;
-    // &:before{
-    //   position: absolute;
-    //   content: '';
-    //   left: 50%;
-    //   top: 0;
-    //   width: 1px;
-    //   height: 6%;
-    //   background: rgb(229,229,229);
-    // }
+    padding-bottom: 4em;
   }
   .img-container{
     position: absolute;
@@ -54,5 +44,18 @@
     color: #000;
     font-size: 32px;
     font-weight: 200;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .project{
+    .project-container{
+      padding-top: 6em;
+      padding-bottom: 6em;
+      .project-list{
+        width: 75%;
+        margin: auto;
+      }
+    }
   }
 }
