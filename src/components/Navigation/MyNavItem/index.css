@@ -6,3 +6,8 @@
   .my-nav-item .my-nav-link:hover {
     opacity: 0.7;
     color: #e0e0e0; }
+
+@media screen and (max-width: 767px) {
+  .my-nav-item .my-nav-link {
+    color: #6e6e6e !important;
+    font-weight: 400; } }

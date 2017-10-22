@@ -32,7 +32,8 @@ class Project extends Component{
         <Grid>
           <Row className="project-container">
               <div className="img-container img-container-l"></div>
-              <Col md={6} lg={6}>
+              <Col xs={12} md={6} lg={6} className="mobile">
+                <a className="title">Project</a>
                 {/* <ul className="project-list project-list-l">
                   {
                     projectListL.map((p, i)=>{
@@ -43,7 +44,7 @@ class Project extends Component{
                   }
                 </ul> */}
               </Col>
-              <Col md={6} lg={6}>
+              <Col xsHidden md={6} lg={6}>
                 <ul className="project-list project-list-r">
                   {/* <div className="project-header">
                     <p>Projects</p>

@@ -41,8 +41,18 @@
     right: 0; }
   .work .img-container-l {
     left: 0; }
+  .work .mobile {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .work .mobile .title {
+      text-decoration: none;
+      color: #fff; }
 
 @media screen and (max-width: 768px) {
   .work .timeline {
     padding: 6em 0 3em 0;
-    font-size: 16px; } }
+    font-size: 16px; }
+  .work .img-container {
+    width: 100%; } }

@@ -22,8 +22,8 @@ class TimelineItem extends Component {
                       <ParallaxProvider>
                         <Parallax
                           className="logo"
-                          offsetYMax={30}
-                          offsetYMin={-30}
+                          offsetYMax={35}
+                          offsetYMin={-35}
                           slowerScrollRate={true}
                           tag="figure"
                         >

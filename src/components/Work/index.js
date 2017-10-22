@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row} from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import './index.css';
 import TimelineItem from './TimelineItem';
 import qnap_logo from '../img/work/qnap_logo.png';
@@ -19,15 +19,20 @@ class Work extends Component {
         <div className="img-container img-container-r"></div>
         <Grid>
           <Row>
-            <ul className="timeline">
-              {
-                works.map((w, i)=>{
-                  return(
-                    <TimelineItem title={w.title} time={w.time} desc={w.desc} logo={w.logo} link={w.link} order={i} key={i}/>
-                  );
-                })
-              }
-            </ul>
+            <Col xs={12} smHidden mdHidden lgHidden className="mobile">
+              <a href="/work" className="title">Work</a>
+            </Col>
+            <Col xsHidden>
+              <ul className="timeline">
+                {
+                  works.map((w, i)=>{
+                    return(
+                      <TimelineItem title={w.title} time={w.time} desc={w.desc} logo={w.logo} link={w.link} order={i} key={i}/>
+                    );
+                  })
+                }
+              </ul>
+            </Col>
           </Row>
         </Grid>
       </section>

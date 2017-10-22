@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import MyNavItem from './MyNavItem';
-import Scroll from 'react-scroll';
 import './index.css';
-
-let Link = Scroll.Link;
 
 class Navigation extends Component {
   constructor(props){
@@ -23,16 +20,20 @@ class Navigation extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  handleScroll = () =>{
+  handleScroll = () => {
     this.setState({
       scrollY: window.scrollY,
       hidden: window.scrollY > this.state.scrollY
     })
   }
 
+  handleToggle = () => {
+    // if(this.state.hidden && this.props.expended)
+  }
+
   render(){
     return (
-      <Navbar fixedTop collapseOnSelect className={this.state.hidden? 'hide' : ''}>
+      <Navbar fixedTop className={this.state.hidden? 'hide' : ''} onToggle={this.handleToggle}>
         <Navbar.Header>
           <Navbar.Brand>
             <a href="/">Eric Deng</a>
