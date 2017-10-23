@@ -16,13 +16,15 @@ class Work extends Component {
     ];
     return(
       <section className="work" id='work'>
-        <div className="img-container img-container-r"></div>
+        <div className={this.props.expanded? "img-container img-container-r changeBg" : "img-container img-container-r"}></div>
         <Grid>
           <Row>
-            <Col xs={12} smHidden mdHidden lgHidden className="mobile">
-              <a href="/work" className="title">Work</a>
+            <Col xs={12} className={this.props.expanded? "mobile shrink" : "mobile expand"}>
+              <a href="#work" onClick={()=>this.props.toggle('work')} className="title">Work</a>
             </Col>
-            <Col xsHidden>
+          </Row>
+          <Row>
+            <Col className={this.props.expanded? null : "shrink"}>
               <ul className="timeline">
                 {
                   works.map((w, i)=>{

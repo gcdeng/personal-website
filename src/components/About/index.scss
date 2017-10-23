@@ -1,9 +1,11 @@
 .about{
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-color: #000;
   position: relative;
   z-index: 1;
+  display: block;
+  .container{
+    padding: 5rem 0 5rem 0;
+  }
   .my-photo{
     display: block;
     height: auto;
@@ -13,7 +15,7 @@
     margin-right: 20px;
   }
   .about-content{
-    margin-right: 150px;
+    margin-right: 100px;
     margin-left: 20px;
     font-size: 20px;
     font-weight: 200;
@@ -27,12 +29,32 @@
       margin: 20px 0 50px 0;
     }
   }
+  .mobile{
+    text-align: center;
+    font-size: 2rem;
+    display: none;
+    .title{
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  .img-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/myPhoto.jpg");
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .about{
-    padding-top: 100px;
-    padding-bottom: 50px;
     z-index: 2;
     .my-photo{
       max-width: 50%;
@@ -43,6 +65,23 @@
       width: 75%;
       margin: auto;
       margin-top: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about{
+    .expand{
+      display: block !important;
+    }
+    .shrink{
+      display: none !important;
+    }
+    .changeBg{
+      background: none;
+    }
+    .img-container{
+      display: block;
     }
   }
 }

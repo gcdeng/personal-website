@@ -29,36 +29,25 @@ class Project extends Component{
     // ];
     return (
       <section className="project" id="project">
+        <div className={this.props.expanded? "img-container img-container-l changeBg" : "img-container img-container-l"}></div>
         <Grid>
-          <Row className="project-container">
-              <div className="img-container img-container-l"></div>
-              <Col xs={12} md={6} lg={6} className="mobile">
-                <a className="title">Project</a>
-                {/* <ul className="project-list project-list-l">
-                  {
-                    projectListL.map((p, i)=>{
-                      return (
-                        <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} key={i}/>
-                      )
-                    })
-                  }
-                </ul> */}
-              </Col>
-              <Col xsHidden md={6} lg={6}>
-                <ul className="project-list project-list-r">
-                  {/* <div className="project-header">
-                    <p>Projects</p>
-                  </div> */}
-                  {
-                    projectList.map((p, i)=>{
-                      return (
-                        <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} list={p.list} key={i}/>
-                      )
-                    })
-                  }
-                </ul>
-              </Col>
-            {/* </div> */}
+          <Row>
+            <Col className={this.props.expanded? "mobile shrink" : "mobile expand"} xs={12}>
+              <a href="#project" onClick={()=>this.props.toggle('project')} className="title">Project</a>
+            </Col>
+          </Row>
+          <Row>
+            <Col className={this.props.expanded? null : "shrink"} xs={12} smOffset={6} sm={6} mdOffset={6} md={6} lgOffset={6} lg={6}>
+              <ul className="project-list project-list-r">
+                {
+                  projectList.map((p, i)=>{
+                    return (
+                      <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} list={p.list} key={i}/>
+                    )
+                  })
+                }
+              </ul>
+            </Col>
           </Row>
         </Grid>
       </section>

@@ -8,13 +8,19 @@ class About extends Component {
   render(){
     return(
       <section className="about" id="about">
+        <div className={this.props.expanded? "img-container changeBg" : "img-container"}></div>
         <Grid>
-          <Row className="about-container">
-            <Col md={6}>
+          <Row>
+            <Col xs={12} className={this.props.expanded? "mobile shrink" : "mobile expand"}>
+              <a href="#about" className="title" onClick={()=>this.props.toggle('about')}>About</a>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6} className={this.props.expanded? null : "shrink"}>
               <ParallaxProvider>
                 <Parallax
                     offsetYMax={15}
-                    offsetYMin={-15}
+                    offsetYMin={-20}
                     slowerScrollRate={true}
                     tag="figure"
                 >
@@ -24,7 +30,7 @@ class About extends Component {
                 </Parallax>
               </ParallaxProvider>
             </Col>
-            <Col md={6}>
+            <Col md={6} className={this.props.expanded? null : "shrink"}>
               <div className="about-content">
                 <p>Hello! My name is <span className="its-me">Guo Qin Deng</span>, or you can call me <span className="its-me">Eric</span>. I am a self-taught web developer from Taipei, Taiwan.</p>
                 <p>I am experienced in both Frontend development (HTML5, CSS3, SASS, Javascript, jQuery, React, Bootstrap) and Backend development (Node, Python). I’m currently focusing on frontend development and building Javascript applications.</p>

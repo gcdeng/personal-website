@@ -85,7 +85,7 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .timeline-item {
     padding: 3em 0;
     margin-top: 3em;
@@ -105,6 +105,7 @@
       .flag {
         z-index: 15;
         padding-bottom: 5px;
+        // color: #fff;
         .logo{
           border-radius: 50%;
           position: absolute;
@@ -128,6 +129,9 @@
       position: relative;
       display: block;
       z-index: 15;
+    }
+    .time, .desc {
+      // color: #fff;
     }
   }
 }

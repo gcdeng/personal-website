@@ -49,26 +49,38 @@
     left: 0;
   }
   .mobile{
+    display: none;
     text-align: center;
     font-size: 2rem;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 5rem 0 5rem 0;
     .title{
       text-decoration: none;
       color: #fff;
+      cursor: pointer;
     }
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .work{
     .timeline{
       // width: 80%;
-      padding: 6em 0 3em 0;
+      padding: 5rem 0 2rem 0;
       font-size: 16px;
     }
     .img-container{
       width: 100%;
+    }
+    .expand{
+      display: block !important;
+    }
+    .shrink{
+      display: none !important;
+    }
+    .changeBg{
+      &:before{
+        background: #fafafa;
+      }
     }
   }
 }
