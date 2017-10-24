@@ -1,3 +1,5 @@
+$project-desc-color: #4E4F52;
+
 .project-item{
   text-align: left;
   margin-bottom: 5vw;
@@ -22,12 +24,29 @@
     line-height: 25px;
     color: #000;
     font-weight: 300;
+    transition: color .3s ease;
+    margin: 0;
   }
+  a.project-title{
+    cursor: pointer;
+    &:hover{
+      color: lighten(#000, 30%);
+    }
+  }
+
   .project-desc, .projectItem-list{
-    color: #4E4F52;
+    color: $project-desc-color;
     line-height: 25px;
     font-size: 18px;
     font-weight: 200;
+    a{
+      text-decoration: none;
+      color: inherit;
+      transition: color .3s ease;
+      &:hover{
+        color: darken($project-desc-color, 30%);
+      }
+    }
   }
   .project-tag{
     font-size: 16px;
@@ -43,5 +62,11 @@
     .project-content-container{
       width: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-item{
+    margin-bottom: 3rem;
   }
 }

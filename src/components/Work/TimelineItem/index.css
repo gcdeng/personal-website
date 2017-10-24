@@ -34,7 +34,10 @@
       color: #000;
       font-size: 20px;
       width: 100%;
-      display: block; }
+      display: block;
+      transition: color .3s ease; }
+      .timeline-item .flag-wrapper .flag:hover {
+        color: #4d4d4d; }
       .timeline-item .flag-wrapper .flag .logo {
         position: absolute;
         top: 50%;

@@ -19,12 +19,24 @@
     font-size: 20px;
     line-height: 25px;
     color: #000;
-    font-weight: 300; }
+    font-weight: 300;
+    transition: color .3s ease;
+    margin: 0; }
+  .project-item a.project-title {
+    cursor: pointer; }
+    .project-item a.project-title:hover {
+      color: #4d4d4d; }
   .project-item .project-desc, .project-item .projectItem-list {
     color: #4E4F52;
     line-height: 25px;
     font-size: 18px;
     font-weight: 200; }
+    .project-item .project-desc a, .project-item .projectItem-list a {
+      text-decoration: none;
+      color: inherit;
+      transition: color .3s ease; }
+      .project-item .project-desc a:hover, .project-item .projectItem-list a:hover {
+        color: #030304; }
   .project-item .project-tag {
     font-size: 16px;
     color: #909398; }
@@ -34,3 +46,7 @@
 @media screen and (max-width: 992px) {
   .project-item .project-content-container {
     width: 100%; } }
+
+@media screen and (max-width: 767px) {
+  .project-item {
+    margin-bottom: 3rem; } }

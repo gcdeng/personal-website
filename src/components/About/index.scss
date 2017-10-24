@@ -4,7 +4,8 @@
   z-index: 1;
   display: block;
   .container{
-    padding: 5rem 0 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .my-photo{
     display: block;
@@ -15,7 +16,7 @@
     margin-right: 20px;
   }
   .about-content{
-    margin-right: 100px;
+    margin-right: 150px;
     margin-left: 20px;
     font-size: 20px;
     font-weight: 200;
@@ -62,7 +63,7 @@
       padding-top: 50px;
     }
     .about-content{
-      width: 75%;
+      width: 70%;
       margin: auto;
       margin-top: 70px;
     }

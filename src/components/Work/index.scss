@@ -9,18 +9,18 @@
     padding: 2em 0 4em 0;
     font-weight: 300;
     font-size: 20px;
-    &:before {
-      position: absolute;
-      left: 50%;
-      top: 0;
-      content: ' ';
-      display: block;
-      width: 1px;
-      height: 100%;
-      // margin-left: -2px;
-      z-index: 5;
-      background: rgb(229,229,229);
-    }
+    // &:before {
+    //   position: absolute;
+    //   left: 50%;
+    //   top: 0;
+    //   content: ' ';
+    //   display: block;
+    //   width: 1px;
+    //   height: 100%;
+    //   // margin-left: -2px;
+    //   z-index: 5;
+    //   background: rgb(229,229,229);
+    // }
   }
   .img-container{
     position: absolute;

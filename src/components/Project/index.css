@@ -2,7 +2,8 @@
   background-color: #fff;
   position: relative; }
   .project .container {
-    padding: 5rem 0 5rem 0; }
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
   .project .img-container {
     position: absolute;
     top: 0;

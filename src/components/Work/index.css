@@ -9,16 +9,6 @@
     padding: 2em 0 4em 0;
     font-weight: 300;
     font-size: 20px; }
-    .work .timeline:before {
-      position: absolute;
-      left: 50%;
-      top: 0;
-      content: ' ';
-      display: block;
-      width: 1px;
-      height: 100%;
-      z-index: 5;
-      background: #e5e5e5; }
   .work .img-container {
     position: absolute;
     top: 0;
