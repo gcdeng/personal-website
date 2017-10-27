@@ -27,13 +27,9 @@ class Navigation extends Component {
     })
   }
 
-  handleToggle = () => {
-    // if(this.state.hidden && this.props.expended)
-  }
-
   render(){
     return (
-      <Navbar fixedTop className={this.state.hidden? 'hide' : ''} onToggle={this.handleToggle}>
+      <Navbar fixedTop collapseOnSelect className={this.state.hidden? 'hide' : ''}>
         <Navbar.Header>
           <Navbar.Brand>
             <a href="/">Eric Deng</a>
@@ -45,7 +41,7 @@ class Navigation extends Component {
             <MyNavItem {...this.props} item="about" needRouter={false} />
             <MyNavItem {...this.props} item="work" needRouter={false} />
             <MyNavItem {...this.props} item="project" needRouter={false} />
-            <MyNavItem {...this.props} item="blog" needRouter={true} />
+            {/* <MyNavItem {...this.props} item="blog" needRouter={true} /> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
