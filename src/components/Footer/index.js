@@ -25,7 +25,7 @@ class Footer extends Component {
             <Col xs={12} sm={12} md={6} lg={6}>
               <ul className="footer-social">
                 <li><a href="https://www.facebook.com/frederickdeng" target="_blank" rel="noopener noreferrer"><img className="icon" src={fbIcon} alt="facebook"></img></a></li>
-                <li><a href="https://www.instagram.com/frederick_deng/" target="_blank" rel="noopener noreferrer"><img className="icon" src={igIcon} alt="instagram"></img></a></li>
+                <li><a href="https://www.instagram.com/fredericdeng/" target="_blank" rel="noopener noreferrer"><img className="icon" src={igIcon} alt="instagram"></img></a></li>
                 <li><a href="https://github.com/gcdeng" target="_blank" rel="noopener noreferrer"><img className="icon" src={githubIcon} alt="github"></img></a></li>
                 <li><a href="https://bitbucket.org/gcdeng/" target="_blank" rel="noopener noreferrer"><img className="icon" src={bitbucketIcon} alt="bitbucket"></img></a></li>
                 <li><a href="https://leetcode.com/gcdeng/" target="_blank" rel="noopener noreferrer"><img className="icon leetcode" src={leetcodeIcon} alt="leetcode"></img></a></li>
