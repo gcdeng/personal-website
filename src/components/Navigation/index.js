@@ -86,7 +86,7 @@ class Navigation extends Component {
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to="project" spy={true} smooth="easeInCubic" duration={500} onClick={this.handleOnClick}>
-                      project
+                      projects
                     </Link>
                   </li>
                 </ul>
