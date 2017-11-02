@@ -66,7 +66,7 @@ class Navigation extends Component {
           <Grid>
             <Row>
               <div className="nav-header">
-                <a className="nav-brand" href="/">EricDeng</a>
+                <a className="nav-brand" href="/personal-website">EricDeng</a>
                 <button className="nav-toggle" onClick={this.handleOnClick}>
                   <span className={this.state.menuExpanded? "icon-bar bar-1" : "icon-bar"}></span>
                   <span className={this.state.menuExpanded? "icon-bar bar-2" : "icon-bar"}></span>
