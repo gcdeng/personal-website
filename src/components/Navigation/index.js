@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Row, Navbar, Nav} from 'react-bootstrap';
+import {Grid, Row} from 'react-bootstrap';
 import Scroll from 'react-scroll';
 import './index.css';
 
@@ -88,6 +88,11 @@ class Navigation extends Component {
                     <Link className="nav-link" to="project" spy={true} smooth="easeInCubic" duration={500} onClick={this.handleOnClick}>
                       projects
                     </Link>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="https://gcdeng.github.io/" target="_blank" rel="noopener noreferrer">
+                      blog
+                    </a>
                   </li>
                 </ul>
               </div>

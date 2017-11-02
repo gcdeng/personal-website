@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Fade } from 'react-reveal';
 import './index.css';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
@@ -30,14 +31,18 @@ class TimelineItem extends Component {
                           <img className="logo-img" src={this.props.logo} alt='work logo'/>
                         </Parallax>
                       </ParallaxProvider>
-                      {this.props.title}
+                      <Fade>
+                        {this.props.title}
+                      </Fade>
                     </span>
                   </a>
                 </div>
+                <Fade>
                 <div className="time-wrapper">
                   <span className="time">{this.props.time}</span>
                 </div>
                 <div className="desc">{this.props.desc}</div>
+                </Fade>
               </div>
             }
         </div>

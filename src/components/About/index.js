@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import { Fade } from 'react-reveal';
 import './index.css';
 import myPhoto from '../img/myPhoto.jpg';
 
@@ -17,18 +18,20 @@ class About extends Component {
           </Row>
           <Row>
             <Col md={6} className={this.props.expanded? null : "shrink"}>
-              <ParallaxProvider>
-                <Parallax
-                    offsetYMax={15}
-                    offsetYMin={-20}
-                    slowerScrollRate={true}
-                    tag="figure"
-                >
-                  <figure className="about-figure">
-                    <img src={myPhoto} className="my-photo" alt="me"></img>
-                  </figure>
-                </Parallax>
-              </ParallaxProvider>
+              <Fade>
+                <ParallaxProvider>
+                  <Parallax
+                      offsetYMax={15}
+                      offsetYMin={-20}
+                      slowerScrollRate={true}
+                      tag="figure"
+                  >
+                    <figure className="about-figure">
+                      <img src={myPhoto} className="my-photo" alt="me"></img>
+                    </figure>
+                  </Parallax>
+                </ParallaxProvider>
+              </Fade>
             </Col>
             <Col md={6} className={this.props.expanded? null : "shrink"}>
               <div className="about-content">
