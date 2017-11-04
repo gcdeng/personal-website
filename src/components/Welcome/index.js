@@ -22,7 +22,7 @@ class Welcome extends Component {
 
   handleScroll = (e) => {
     let proportion = (window.scrollY/window.innerHeight);
-    let gradientOffset = 0.2, bgSizeOffset=1.5;
+    let gradientOffset = 0.2, bgSizeXoffset=1.5;
     let gradientPropo = proportion+gradientOffset;
     if(proportion<=1){
       this.setState({
@@ -31,7 +31,7 @@ class Welcome extends Component {
     }
     if(proportion<=0.8){
       this.setState({
-        bgSize: `${(bgSizeOffset-(proportion*0.2))*100}%`
+        bgSize: `${(bgSizeXoffset-(proportion*0.2))*100}%`
       })
     }
   }

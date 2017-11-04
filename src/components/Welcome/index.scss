@@ -1,5 +1,5 @@
 @keyframes fadeTop {
-    from {opacity: 0.5; transform: translate3d(0, -12px, 0);}
+    from {opacity: 0.5; transform: translate3d(0, -15px, 0);}
     to {opacity: 1; transform: translate3d(0, 0, 0);}
 }
 
@@ -44,9 +44,14 @@
 
 @media screen and (max-width: 991px) {
   .welcome{
-    background-size: cover !important;
     .title{
       font-size: 1.5rem;
     }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .welcome{
+    background-size: cover !important;
   }
 }
