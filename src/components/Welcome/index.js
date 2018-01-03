@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import './index.css';
 
@@ -43,18 +43,25 @@ class Welcome extends Component {
     } = this.state;
     return(
       <section className='welcome' style={{backgroundSize: bgSize}}>
-        <div className="gradient" style={{background: changeGradient}}>
-          <ParallaxProvider>
-            <Parallax
-              className="custom-class"
-              offsetYMax={800}
-              offsetYMin={-800}
-              slowerScrollRate={true}
-            >
-              <p className="title">Hi, I'm Eric, a Frontend Web Developer.</p>
-            </Parallax>
-          </ParallaxProvider>
-        </div>
+              <div className="gradient" style={{background: changeGradient}}>
+              <Grid>
+                <Row>
+                  <Col md={12}>
+                <ParallaxProvider>
+                  <Parallax
+                    className="custom-class"
+                    offsetYMax={800}
+                    offsetYMin={-800}
+                    slowerScrollRate={true}
+                  >
+                    <p className="title">Hi, I'm Eric, a Frontend Web Developer.</p>
+                  </Parallax>
+                </ParallaxProvider>
+                </Col>
+              </Row>
+            </Grid>
+              </div>
+
       </section>
     );
   }
