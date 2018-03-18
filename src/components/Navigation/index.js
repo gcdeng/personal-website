@@ -75,7 +75,7 @@ class Navigation extends Component {
               <div className={this.state.menuExpanded? "nav-collapse in": "nav-collapse"}>
                 <ul className="nav-list">
                   <li className="nav-item">
-                    <Link className="nav-link" to="about" spy={true} smooth="easeInCubic" duration={500} onClick={this.handleOnClick}>
+                    <Link className="nav-link" to="about" spy={true} smooth="easeInCubic" duration={500} offset={-150} onClick={this.handleOnClick}>
                       about
                     </Link>
                   </li>
@@ -89,11 +89,11 @@ class Navigation extends Component {
                       projects
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a className="nav-link" href="https://gcdeng.github.io/" target="_blank" rel="noopener noreferrer">
                       blog
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </Row>
