@@ -35,7 +35,8 @@
     text-shadow: -1px -1px 1px #fafafa, 2px 2px 1px #777;
     display: block;
     position: relative;
-    text-align: center; }
+    text-align: center;
+    z-index: -2; }
 
 @media screen and (max-width: 991px) {
   .welcome .title {
