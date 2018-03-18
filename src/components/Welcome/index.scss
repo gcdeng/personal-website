@@ -1,0 +1,57 @@
+@keyframes fadeTop {
+    from {opacity: 0.5; transform: translate3d(0, -15px, 0);}
+    to {opacity: 1; transform: translate3d(0, 0, 0);}
+}
+
+.welcome{
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/welcome-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-size: 120%;
+  background-attachment: fixed;
+  background-color: #000;
+  animation-name: fadeTop;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  .gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .parallax-inner{
+    z-index: 2;
+  }
+  .title {
+    color: #ffffff;
+    font-size: 2.25rem;
+    font-weight: 400;
+    text-shadow:
+      -1px -1px 1px #fafafa,
+      2px 2px 1px #777;
+    display: block;
+    position: relative;
+    text-align: center;
+    z-index: -2;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .welcome{
+    .title{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .welcome{
+    background-size: cover !important;
+  }
+}

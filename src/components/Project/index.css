@@ -1,0 +1,55 @@
+.project {
+  background-color: #fff;
+  position: relative; }
+  .project .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+  .project .img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url("../img/work-bg.jpg");
+    background-position: 43% center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .project .img-container:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)); }
+  .project .img-container-l {
+    left: 0; }
+  .project .project-list {
+    list-style: none;
+    padding-left: 0; }
+  .project .mobile {
+    display: none;
+    text-align: center;
+    font-size: 2rem; }
+    .project .mobile .title {
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer; }
+
+@media screen and (max-width: 992px) {
+  .work {
+    z-index: 2; } }
+
+@media screen and (max-width: 768px) {
+  .project .project-list {
+    width: 70%;
+    margin: auto;
+    padding-left: 0; }
+  .project .img-container {
+    width: 100%; }
+  .project .expand {
+    display: block !important; }
+  .project .shrink {
+    display: none !important; }
+  .project .changeBg:before {
+    background: #fff; } }
