@@ -38,7 +38,7 @@ class Project extends Component{
                 {
                   projectList.map((p, i)=>{
                     return (
-                      <Fade duration={500} key={i}>
+                      <Fade key={i}>
                         <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} list={p.list} />
                       </Fade>
                     )
