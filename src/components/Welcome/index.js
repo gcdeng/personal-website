@@ -54,7 +54,7 @@ class Welcome extends Component {
                   offsetYMin={-800}
                   slowerScrollRate={true}
                 >
-                  <p className="title">Hi, I'm Eric, a Frontend Web Developer.</p>
+                  <p className="title">Hi, I'm Eric, a Full-Stack Web Developer.</p>
                 </Parallax>
               </ParallaxProvider>
             </Col>
