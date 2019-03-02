@@ -1,0 +1,79 @@
+.project{
+  // padding: 50px;
+  background-color: #fff;
+  position: relative;
+  .container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .img-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url("../img/work-bg.jpg");
+    background-position: 43% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+    }
+  }
+  .img-container-l{
+    left: 0;
+  }
+  .project-list-l {
+    // margin-top: 300px;
+  }
+  .project-list{
+    list-style: none;
+    padding-left: 0;
+  }
+  .mobile{
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+    .title{
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .project{
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project{
+    .project-list{
+      width: 90%;
+      margin: auto;
+      padding-left: 0;
+    }
+    .img-container{
+      width: 100%;
+    }
+    .expand{
+      display: block !important;
+    }
+    .shrink{
+      display: none !important;
+    }
+    .changeBg{
+      &:before{
+        background: #fff;
+      }
+    }
+  }
+}
