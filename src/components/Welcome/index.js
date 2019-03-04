@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import './index.css';
 
 class Welcome extends Component {
@@ -47,16 +46,7 @@ class Welcome extends Component {
         <Grid>
           <Row>
             <Col md={12}>
-              <ParallaxProvider>
-                <Parallax
-                  className="custom-class"
-                  offsetYMax={800}
-                  offsetYMin={-800}
-                  slowerScrollRate={true}
-                >
-                  <p className="title">Hi! I'm Eric, a Full-Stack Web Developer.</p>
-                </Parallax>
-              </ParallaxProvider>
+              <p className="title">Hi! I'm Eric, a Full-Stack Web Developer.</p>
             </Col>
           </Row>
         </Grid>
