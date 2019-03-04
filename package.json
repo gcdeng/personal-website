@@ -10,7 +10,6 @@
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.1",
-    "react-reveal": "^0.7.3",
     "react-scripts": "^1.1.5",
     "react-scroll": "^1.5.5",
     "react-scroll-parallax": "^1.1.0"

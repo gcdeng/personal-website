@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import ProjectItem from './ProjectItem';
-import { Fade } from 'react-reveal';
 import './index.css';
 
 class Project extends Component{
@@ -38,9 +37,7 @@ class Project extends Component{
                 {
                   projectList.map((p, i)=>{
                     return (
-                      <Fade key={i}>
-                        <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} list={p.list} />
-                      </Fade>
+                      <ProjectItem link={p.link} imgSrc={p.imgSrc} title={p.title} desc={p.desc} tag={p.tag} list={p.list} />
                     )
                   })
                 }
