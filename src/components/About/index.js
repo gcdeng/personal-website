@@ -19,8 +19,8 @@ class About extends Component {
             <Col md={6} className={this.props.expanded? null : "shrink"}>
                 <ParallaxProvider>
                   <Parallax
-                      offsetYMax={15}
-                      offsetYMin={-20}
+                      offsetYMax={10}
+                      offsetYMin={-10}
                       slowerScrollRate={true}
                       tag="figure"
                   >
