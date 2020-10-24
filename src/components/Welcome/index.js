@@ -46,7 +46,7 @@ class Welcome extends Component {
         <Grid>
           <Row>
             <Col md={12}>
-              <p className="title">Hi! I'm Eric, a Full-Stack Web Developer.</p>
+              <p className="title">Hi! I'm Eric, a Frontend Web Developer.</p>
             </Col>
           </Row>
         </Grid>
